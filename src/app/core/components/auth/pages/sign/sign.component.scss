@@ -1,0 +1,42 @@
+@import "../../../../../../scss/base/variables";
+@import "../../../../../../scss/rem-calc.scss";
+
+:host {
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &,
+    label,
+    input {
+      width: 100%;
+    }
+
+    label {
+      align-items: center;
+      border-bottom: rem-calc(1) solid $cinza;
+      display: flex;
+      justify-content: center;
+
+      svg {
+        width: rem-calc(30);
+      }
+
+      input {
+        border: none;
+        font-size: rem-calc(18);
+        height: rem-calc(50);
+        margin-left: rem-calc(10);
+        &::placeholder {
+          color: $preto;
+        }
+      }
+    }
+  }
+
+  .msg-denied {
+    text-align: center;
+  }
+}

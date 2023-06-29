@@ -1,0 +1,10 @@
+@import "../../../../../scss/base/variables";
+@import "../../../../../scss/rem-calc.scss";
+
+:host {
+  strong {
+    color: $vermelho;
+    font-size: rem-calc(25);
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,21 @@
+<div class="container">
+  <img src="/assets/angular.png" alt="Logo Angular" />
+  <form [formGroup]="formAuth" (ngSubmit)="submitForm()">
+    <label>
+      <img src="/assets/user.svg" />
+      <input type="email" formControlName="email" placeholder="Email" required
+    /></label>
+    <label>
+      <img src="/assets/password.svg" />
+      <input
+        type="password"
+        formControlName="password"
+        placeholder="Senha"
+        required
+    /></label>
+
+    <button class="btn" [disabled]="formAuth.invalid">Login</button>
+  </form>
+
+  <span class="msg-denied" *ngIf="msgError">{{ msgError }}</span>
+</div>

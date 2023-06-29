@@ -1,0 +1,10 @@
+@import "../rem-calc.scss";
+@import "../base/variables";
+@import "../base/base";
+
+.msg-denied {
+  color: $vermelho;
+  font-size: rem-calc(18);
+  font-weight: 400;
+  margin-top: rem-calc(24);
+}

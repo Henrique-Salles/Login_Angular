@@ -1,0 +1,25 @@
+@import "../rem-calc.scss";
+@import "../base/variables";
+@import "../base/base";
+
+.btn {
+  border: none;
+  border-radius: rem-calc(10);
+  background: $vermelho;
+  color: $branco;
+  cursor: pointer;
+
+  font-family: Roboto;
+  font-size: rem-calc(18);
+  font-style: normal;
+  font-weight: 400;
+
+  height: rem-calc(60);
+  margin-top: rem-calc(35);
+  width: rem-calc(423);
+
+  &:disabled {
+    cursor: no-drop;
+    background: darken($vermelho, 20%);
+  }
+}

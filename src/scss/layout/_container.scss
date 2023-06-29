@@ -1,0 +1,19 @@
+@import "../rem-calc.scss";
+@import "../base/variables";
+
+.container {
+  align-items: center;
+
+  background: $branco;
+  border-radius: 10px;
+  box-shadow: 0 rem-calc(4) rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: rem-calc(370);
+  padding: rem-calc(25) rem-calc(40);
+  width: rem-calc(500);
+}
